@@ -1,0 +1,16 @@
+$scope.getNbrecette = function (idperson) {
+
+    var rt = 0;
+
+    for (var i = 0; i < $scope.recettes.length; i++) {
+
+        if (angular.equals(idperson, $scope.recettes[i]['creatorId'])) {
+
+            rt++;
+
+        }
+
+
+    }
+    return rt;
+};
